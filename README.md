@@ -22,4 +22,4 @@ where:
         '\340' is the first key
         '\043\242\062\374\062\365\062\266\201\323\145\251\200\303\025\315' is the second key
 
-The shorcoming of this program is that I still find the encryption key manually by guessing the index
+The shorcoming of this program is that I still have to find the encryption key manually by guessing the index
