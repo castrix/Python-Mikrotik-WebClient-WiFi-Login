@@ -9,9 +9,9 @@ def webClientLogin(username, password, minkey1, maxkey1, minkey2, maxkey2, url):
     r= requests.get(url).text #requesting the url text
     key1=""
     key2=""
-    for i in range(minkey1, minkey2): #6 characters, grabbing the first encription key, you should find the index yourself
+    for i in range(minkey1, maxkey1): #6 characters, grabbing the first encription key, you should find the index yourself
         key1 = key1+r[i]
-    for i in range(maxkey2, maxkey2): #66 characters, grabbing the second encription key
+    for i in range(minkey2, maxkey2): #66 characters, grabbing the second encription key
         key2 = key2+r[i]
     key1=bytes(key1, "utf-8").decode("unicode_escape") #translating octal characters to char
     key2=bytes(key2, "utf-8").decode("unicode_escape") #translating octal characters to char
