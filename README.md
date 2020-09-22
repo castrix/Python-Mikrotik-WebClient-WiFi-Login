@@ -1,6 +1,6 @@
 # PythonWebclientWifiLogin
-This is a python code to login wifi via webclient especially designed for Mikrotik webclient that using encription key which not allow u to login directly via request only. The encription key generated randomly at some time interval, so the first thing you want to do is searching the index of the encription key.
-The application of this program is to be used in headless pc such as Raspberry Pi or anything that is not using GUI and has no other way to login to the webclient except using requests package.
+This is a python code to login wifi to Mikrotik Webclient for devices that has no access to GUI. Mikrotik Webclient is using an encription key generated randomly at some time interval, so the first thing you want to do is to search the index of the encription key.
+The application of this program is to be used in headless pc such as Raspberry Pi or anything that doesn't have GUI (Linux).
 For the example this is the encription key of Mikrotik webclient:
 
         function doLogin() {
