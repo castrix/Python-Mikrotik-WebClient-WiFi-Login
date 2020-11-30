@@ -20,8 +20,8 @@ especially:
         '\340' + document.login.password.value + '\043\242\062\374\062\365\062\266\201\323\145\251\200\303\025\315'
 where:
 
-        '\340' is the first key
-        '\043\242\062\374\062\365\062\266\201\323\145\251\200\303\025\315' is the second key
+        '\340' is the first unique key
+        '\043\242\062\374\062\365\062\266\201\323\145\251\200\303\025\315' is the second unique key
 
 ## Using the program
 ### First import the module
