@@ -25,9 +25,9 @@ where:
 
 ## Using the program
 ### First import the module
-`import webclientlogin as w
-
-w.webClientLogin("username","password","http://url") #you can leave the unique key index empty or set it manually`
+        import webclientlogin as w
+        
+        w.webClientLogin("username","password","http://url") #you can leave the unique key index empty or set it manually
 
 ### Arguments
-webClientLogin(username_string, password_string, url_string, minkey1_integer_optional, maxkey1_integer_optional, minkey2_integer_optional, maxkey2_integer_optional)
+        webClientLogin(username_string, password_string, url_string, minkey1_integer_optional, maxkey1_integer_optional, minkey2_integer_optional, maxkey2_integer_optional)
