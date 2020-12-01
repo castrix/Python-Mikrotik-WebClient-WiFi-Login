@@ -3,7 +3,7 @@ from python_mikrotik_login import mikrotikLogin
 
 username="ihsan"
 password="fajar"
-url="http://castrix.github.io/" # Mikrotik login url
+url="https://python-mikrotik-webclient-wifi-login.ihsanfr.repl.co/login" # simulated Mikrotik login page url change this
 
 mikrotikLogin(username, password, url)
 # you can set the salt index manually (if the pattern is different) or leave it empty
