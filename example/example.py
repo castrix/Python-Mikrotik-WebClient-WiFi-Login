@@ -1,9 +1,10 @@
 from python_mikrotik_login import mikrotikLogin
 
-
+#this is demonstration code
+#try to change this username and password, you will get different output
 username="ihsan"
 password="fajar"
-url="https://python-mikrotik-webclient-wifi-login.ihsanfr.repl.co/login" # simulated Mikrotik login page url change this
+url="https://python-mikrotik-webclient-wifi-login.ihsanfr.repl.co/login" #simulated Mikrotik login page url
 
 mikrotikLogin(username, password, url)
 # you can set the salt index manually (if the pattern is different) or leave it empty
