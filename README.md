@@ -13,6 +13,8 @@ This is a python code to login to wifi Mikrotik Webclient for devices that has n
 ### Arguments
         mikrotikLogin(username_string, password_string, url_string, minkey1_integer_optional, maxkey1_integer_optional, minkey2_integer_optional, maxkey2_integer_optional)
 
+if you are still confused, see the [Example](https://github.com/castrix/Python-Mikrotik-WebClient-WiFi-Login/tree/master/example)
+
 ## How this works
 This code works by finding the unique key from the Mikrotik Web Client and then combine it with username and password then send back the `post` request to the Mikrotik Web Client.
 ### Finding the unique key
