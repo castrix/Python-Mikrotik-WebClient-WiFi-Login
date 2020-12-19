@@ -61,7 +61,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name=NAME, # Replace with your own username
+    name=NAME,
     version="3.0.0",
     author="castrix",
     author_email="castrix.ihsan@gmail.com",

@@ -9,7 +9,7 @@ This is a python code to login to wifi Mikrotik Webclient for devices that has n
 ## Using the program
 ### First import the module
         from python_mikrotik_login import MikrotikLogin
-        
+
         login = MikrotikLogin("username","password","http://url") #you can leave the unique key index empty or set it manually
         login.do_login()
         print(login) # to see status
@@ -40,3 +40,9 @@ where:
 
         \340 is the first unique key or salt
         \043\242\062\374\062\365\062\266\201\323\145\251\200\303\025\315 is the second unique key salt
+
+# Contributors
+
+[Ihsan Fajar Ramadhan](https://github.com/castrix)
+
+[MarchelAce](https://github.com/Marchel-Ace)
