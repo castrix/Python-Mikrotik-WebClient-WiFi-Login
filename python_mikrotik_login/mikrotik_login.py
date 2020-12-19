@@ -102,7 +102,7 @@ class MikrotikLogin:
         if internet connection is detected and False if not
         """
         try:
-            response = urllib2.urlopen('http://216.58.192.142', timeout=1)
+            response = urllib2.urlopen('https://google.com', timeout=1)
             self.is_connected = True
             return True
         except Exception as e:
