@@ -7,8 +7,8 @@ import speedtest
 import json
 
 # program login wifi via webclient Mikrotik
-# by ihsan fajar ramadhan
-# https://github.com/castrix
+# Contributors Ihsan Fajar Ramadhan, Marchel-Ace
+# https://github.com/castrix, https://github.com/Marchel-Ace
 # webclient login code
 
 
