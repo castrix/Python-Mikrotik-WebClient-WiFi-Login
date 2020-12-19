@@ -4,7 +4,6 @@ chardet==4.0.0
 idna==2.10
 Js2Py==0.70
 pyjsparser==2.7.1
-python-mikrotik-login==3.1.0
 requests==2.25.1
 six==1.15.0
 speedtest-cli==2.1.2
