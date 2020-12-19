@@ -1,4 +1,3 @@
-from typing import final
 import requests
 from .md5 import md5
 import urllib.request as urllib2
@@ -99,8 +98,8 @@ class MikrotikLogin:
 
     def check_internet(self):
         """
-        Check internet connection, will return True 
-        if internet connection is detected and False if not 
+        Check internet connection, will return True
+        if internet connection is detected and False if not
         """
         try:
             response = urllib2.urlopen('http://216.58.192.142', timeout=1)
@@ -113,8 +112,8 @@ class MikrotikLogin:
 
     def speed_test(self, share=False):
         """
-        set share True if you want 
-        get image of your speedtest result 
+        set share True if you want
+        get image of your speedtest result
         """
         status = {}
         if self.check_internet():
