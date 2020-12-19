@@ -2,16 +2,19 @@
 This is a python code to login to wifi Mikrotik Webclient for devices that has no access to GUI (such as headless Raspberry Pi, or Linux Terminal). Mikrotik Webclient is using unique keys or salts generated randomly at some time interval, this program is made to find that unique keys or salts and combine it with username and password to make final login request.
 
 ## Installing the package
+### using pip
         pip install python-mikrotik-login
-
+### using git
+        pip install git+https://github.com/castrix/Python-Mikrotik-WebClient-WiFi-Login
 ## Using the program
 ### First import the module
-        from python_mikrotik_login import mikrotikLogin
+        from python_mikrotik_login import MikrotikLogin
         
-        mikrotikLogin("username","password","http://url") #you can leave the unique key index empty or set it manually
-
+        login = MikrotikLogin("username","password","http://url") #you can leave the unique key index empty or set it manually
+        login.do_login()
+        print(login) # to see status
 ### Arguments
-        mikrotikLogin(username_string, password_string, url_string, minkey1_integer_optional, maxkey1_integer_optional, minkey2_integer_optional, maxkey2_integer_optional)
+        MikrotikLogin(username_string, password_string, url_string, minkey1_integer_optional, maxkey1_integer_optional, minkey2_integer_optional, maxkey2_integer_optional)
 
 if you are still confused, see the [Example](https://github.com/castrix/Python-Mikrotik-WebClient-WiFi-Login/tree/master/example)
 
