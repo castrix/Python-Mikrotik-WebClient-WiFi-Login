@@ -68,6 +68,7 @@ class MikrotikLogin:
         print("Logging in ...")
         if self.check_login_status():
             print("Success! Logged in.")
+            check_internet()
             return True
         else:
             print("Something is wrong!")
@@ -87,6 +88,7 @@ class MikrotikLogin:
             return True
         else:
             print("Success! Logged out.")
+            check_internet()
             return False
 
     def check_login_status(self):
@@ -102,13 +104,13 @@ class MikrotikLogin:
         else:
             self.is_logged_in = False
             return False
-        check_internet()
 
     def check_internet(self):
         """
         Check internet connection, will return True
         if internet connection is detected and False if not
         """
+        print("Checking internet connection ...")
         try:
             response = urllib2.urlopen('http://216.58.192.142', timeout=1)
             self.is_connected = True
