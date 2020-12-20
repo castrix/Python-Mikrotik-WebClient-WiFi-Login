@@ -62,7 +62,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name=NAME,
-    version="3.0.1",
+    version="3.0.5",
     author="castrix",
     author_email="castrix.ihsan@gmail.com",
     description="Python code to login to Mikrotik WebClient without GUI",

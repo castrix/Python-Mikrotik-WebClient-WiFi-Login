@@ -46,7 +46,11 @@ class MikrotikLogin:
         key2 = ""
         if self.minkey1 == 0 or self.maxkey1 == 0 or self.minkey2 == 0 or self.maxkey2 == 0:
             a = "document.sendin.password.value"
-            b = r.index(a)
+            try:
+                b = r.index(a)
+            except:
+                print("Error, url format is not right. Please make sure you use the right url format: http://url/login")
+                return False
             key1 = r[b+len(a)+11:b+len(a)+15]
             key2 = r[b+len(a)+52:b+len(a)+116]
         else:
@@ -61,11 +65,13 @@ class MikrotikLogin:
         finallogin = self.url+"?username="+self.username + \
             "&password="+encryptmd5  # wrap all the variables
         response = requests.post(finallogin).text  # make the final requests
+        print("Logging in ...")
         if self.check_login_status():
-            print("Success!")
+            print("Success! Logged in.")
             return True
         else:
             print("Something is wrong!")
+            print("Please make sure you use the right url format: http://url/login")
             return False
 
     def do_logout(self):
@@ -75,8 +81,9 @@ class MikrotikLogin:
         url = urlparse(self.url)
         final_url = f'{url.scheme}://{url.netloc}/logout'
         req = requests.get(final_url)
-        if self.check_login_status():
-            print("Success!")
+        print("Logging out ...")
+        if !(self.check_login_status()):
+            print("Success! Logged out.")
             return True
         else:
             print("Something is wrong!")

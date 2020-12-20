@@ -9,4 +9,3 @@ six==1.15.0
 speedtest-cli==2.1.2
 tzlocal==3.0b1
 urllib3==1.26.2
-typing==3.7.4.3
