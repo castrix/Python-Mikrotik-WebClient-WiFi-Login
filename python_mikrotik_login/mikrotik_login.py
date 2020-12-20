@@ -68,7 +68,7 @@ class MikrotikLogin:
         print("Logging in ...")
         if self.check_login_status():
             print("Success! Logged in.")
-            check_internet()
+            self.check_internet()
             return True
         else:
             print("Something is wrong!")
@@ -88,7 +88,7 @@ class MikrotikLogin:
             return True
         else:
             print("Success! Logged out.")
-            check_internet()
+            self.check_internet()
             return False
 
     def check_login_status(self):
