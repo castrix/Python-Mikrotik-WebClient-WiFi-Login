@@ -39,7 +39,7 @@ class MikrotikLogin:
         you know what does it mean~
         """
         if self.check_login_status():
-            print("Success!")
+            print("Already logged in!")
             return True
         r = requests.get(self.url).text  # requesting the url text
         key1 = ""
