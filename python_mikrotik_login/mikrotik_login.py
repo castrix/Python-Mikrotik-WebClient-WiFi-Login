@@ -102,6 +102,7 @@ class MikrotikLogin:
         else:
             self.is_logged_in = False
             return False
+        check_internet()
 
     def check_internet(self):
         """
@@ -110,10 +111,10 @@ class MikrotikLogin:
         """
         try:
             response = urllib2.urlopen('http://216.58.192.142', timeout=1)
-            print(response)
             self.is_connected = True
             return True
         except Exception as e:
+            print("error")
             print(e)
             self.is_connected = False
             return False
