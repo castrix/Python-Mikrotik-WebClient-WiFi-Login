@@ -110,6 +110,7 @@ class MikrotikLogin:
         """
         try:
             response = urllib2.urlopen('http://216.58.192.142', timeout=1)
+            print(response)
             self.is_connected = True
             return True
         except Exception as e:
