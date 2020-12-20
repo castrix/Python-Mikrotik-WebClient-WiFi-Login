@@ -82,11 +82,11 @@ class MikrotikLogin:
         final_url = f'{url.scheme}://{url.netloc}/logout'
         req = requests.get(final_url)
         print("Logging out ...")
-        if !(self.check_login_status()):
-            print("Success! Logged out.")
+        if self.check_login_status():
+            print("Something is wrong!")
             return True
         else:
-            print("Something is wrong!")
+            print("Success! Logged out.")
             return False
 
     def check_login_status(self):
@@ -109,7 +109,7 @@ class MikrotikLogin:
         if internet connection is detected and False if not
         """
         try:
-            response = urllib2.urlopen('https://google.com', timeout=1)
+            response = urllib2.urlopen('http://216.58.192.142', timeout=1)
             self.is_connected = True
             return True
         except Exception as e:
