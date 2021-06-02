@@ -8,4 +8,4 @@ requests==2.25.1
 six==1.15.0
 speedtest-cli==2.1.2
 tzlocal==3.0b1
-urllib3==1.26.3
+urllib3==1.26.5
